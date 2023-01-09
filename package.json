@@ -1,0 +1,17 @@
+{
+    "name": "single-page-developer-portfolio",
+    "version": "1.0.0",
+    "description": "This is a solution to the [Single-page developer portfolio challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/singlepage-developer-portfolio-bBVj2ZPi-x).",
+    "main": "index.js",
+    "scripts": {
+        "live": "live-server",
+        "sass": "sass sass/main.scss sass/style.css -w",
+        "start": "npm-run-all --parallel live sass"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "npm-run-all": "^4.1.5",
+        "sass": "^1.57.1"
+    }
+}
