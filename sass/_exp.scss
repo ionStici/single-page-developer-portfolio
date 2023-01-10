@@ -1,5 +1,7 @@
 .exp {
     &__section {
+        position: relative;
+
         max-width: 1110px;
         margin: 40px auto;
         text-align: center;
@@ -18,6 +20,22 @@
 
         @media only screen and (min-width: 75em) {
             row-gap: 58px;
+        }
+    }
+
+    &__rings {
+        position: absolute;
+        right: -360px;
+        bottom: -105px;
+
+        @media only screen and (min-width: 48em) {
+            right: -364px;
+            bottom: -70px;
+        }
+
+        @media only screen and (min-width: 75em) {
+            right: -404px;
+            bottom: -60px;
         }
     }
 

@@ -1,75 +1,7 @@
-// HEADER
-
-.header {
-    max-width: 500px;
-    margin: 0 auto;
-    text-align: center;
-    position: relative;
-    z-index: 2;
-
-    @media only screen and (min-width: 48em) {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        max-width: 1140.5px;
-        margin: 29px auto 0 auto;
-        padding: 0 30px;
-    }
-
-    @media only screen and (min-width: 75em) {
-        margin: 39px auto 0 auto;
-        padding: 0 45px 0 15px;
-    }
-
-    a {
-        text-decoration: none;
-    }
-
-    &__logo {
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 32px;
-        letter-spacing: -0.333333px;
-        margin: 20px 0;
-
-        @media only screen and (min-width: 48em) {
-            font-size: 32px;
-            letter-spacing: -0.444444px;
-            margin: 0;
-        }
-    }
-
-    &__icons {
-        list-style: none;
-        display: flex;
-        justify-content: space-between;
-
-        width: 154px;
-        margin: 0 auto;
-
-        @media only screen and (min-width: 48em) {
-            width: 193px;
-            margin: 0;
-        }
-
-        img {
-            width: 20px;
-            height: 20px;
-
-            @media only screen and (min-width: 48em) {
-                width: 24px;
-                height: 24px;
-            }
-        }
-    }
-}
-
-// HERO
-
 .hero {
     &__section {
         max-width: 450px;
-        margin: -101px auto 80px auto;
+        margin: 0 auto 80px auto;
 
         position: relative;
         z-index: 1;
@@ -89,7 +21,6 @@
             row-gap: revert;
             grid-template-rows: 1fr;
             grid-template-columns: 430px 1fr 322px;
-            margin-top: -61px;
         }
 
         @media only screen and (min-width: 57em) {
@@ -98,11 +29,10 @@
         }
 
         @media only screen and (min-width: 75em) {
-            max-width: 100%;
+            max-width: 1440px;
             grid-template-columns: 665px 445px;
             grid-template-rows: 720px;
             margin-bottom: 104px;
-            margin-top: -71px;
         }
     }
 
@@ -157,6 +87,39 @@
         @media only screen and (min-width: 75em) {
             margin-right: -41px;
             margin-top: 198px;
+        }
+    }
+
+    &__rings {
+        position: absolute;
+        z-index: -1;
+        top: 130px;
+        left: -358px;
+
+        @media only screen and (min-width: 48em) {
+            left: -297px;
+            top: 87px;
+        }
+
+        @media only screen and (min-width: 48em) {
+            left: -130px;
+            top: 135px;
+        }
+    }
+
+    &__circle {
+        position: absolute;
+        top: 255px;
+        right: -80.5px;
+
+        @media only screen and (min-width: 48em) {
+            top: 476px;
+            right: -96.5px;
+        }
+
+        @media only screen and (min-width: 75em) {
+            top: 500px;
+            right: 514px;
         }
     }
 }

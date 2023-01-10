@@ -71,6 +71,10 @@
         width: 340px;
         position: relative;
 
+        @media only screen and (max-width: 23em) {
+            width: 100%;
+        }
+
         @media only screen and (min-width: 57em) {
             width: 344px;
         }
@@ -94,32 +98,55 @@
 
                 @media only screen and (min-width: 75em) {
                     height: 400px;
-                    cursor: pointer;
                 }
             }
 
             &--1 {
                 background-image: url(./../assets/images/thumbnail-project-1-small.webp);
+
+                @media only screen and (min-width: 75em) {
+                    background-image: url(./../assets/images/thumbnail-project-1-large.webp);
+                }
             }
 
             &--2 {
                 background-image: url(./../assets/images/thumbnail-project-2-small.webp);
+
+                @media only screen and (min-width: 75em) {
+                    background-image: url(./../assets/images/thumbnail-project-2-large.webp);
+                }
             }
 
             &--3 {
                 background-image: url(./../assets/images/thumbnail-project-3-small.webp);
+
+                @media only screen and (min-width: 75em) {
+                    background-image: url(./../assets/images/thumbnail-project-3-large.webp);
+                }
             }
 
             &--4 {
                 background-image: url(./../assets/images/thumbnail-project-4-small.webp);
+
+                @media only screen and (min-width: 75em) {
+                    background-image: url(./../assets/images/thumbnail-project-4-large.webp);
+                }
             }
 
             &--5 {
                 background-image: url(./../assets/images/thumbnail-project-5-small.webp);
+
+                @media only screen and (min-width: 75em) {
+                    background-image: url(./../assets/images/thumbnail-project-5-large.webp);
+                }
             }
 
             &--6 {
                 background-image: url(./../assets/images/thumbnail-project-6-small.webp);
+
+                @media only screen and (min-width: 75em) {
+                    background-image: url(./../assets/images/thumbnail-project-6-large.webp);
+                }
             }
         }
 
