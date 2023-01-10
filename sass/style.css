@@ -90,10 +90,25 @@ body {
   }
 }
 
+.h2 {
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -1px;
+  color: #ffffff;
+  margin-bottom: 1px;
+}
+@media only screen and (min-width: 48em) {
+  .h2 {
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -1.5px;
+  }
+}
+
 .p {
   font-weight: 500;
-  color: #d9d9d9;
   margin-bottom: 24px;
+  color: #d9d9d9;
 }
 @media only screen and (min-width: 48em) {
   .p {
@@ -282,40 +297,52 @@ body {
     margin-top: 198px;
   }
 }
-.hero__circle, .hero__rings {
-  position: fixed;
-}
-.hero__circle {
-  top: 254px;
-  right: 37px;
+
+.exp__section {
+  max-width: 1110px;
+  margin: 40px auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
 }
 @media only screen and (min-width: 48em) {
-  .hero__circle {
-    top: 442px;
-    right: -64.5px;
+  .exp__section {
+    text-align: left;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 52px;
   }
 }
 @media only screen and (min-width: 75em) {
-  .hero__circle {
-    top: 520px;
-    right: 545px;
+  .exp__section {
+    row-gap: 58px;
   }
-}
-.hero__rings {
-  top: 124px;
-  z-index: -1;
-  left: -350px;
 }
 @media only screen and (min-width: 48em) {
-  .hero__rings {
-    top: 80px;
-    left: -265px;
+  .exp__box {
+    width: 50%;
   }
 }
-@media only screen and (min-width: 75em) {
-  .hero__rings {
-    top: 133px;
-    left: -100px;
+@media only screen and (min-width: 62.5em) {
+  .exp__box {
+    width: 33%;
+  }
+}
+.exp__p {
+  font-weight: 500;
+  line-height: 26px;
+  color: #d9d9d9;
+}
+@media only screen and (min-width: 48em) {
+  .exp__p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+@media only screen and (min-width: 48em) {
+  .exp__line {
+    display: none;
   }
 }
 

@@ -159,40 +159,4 @@
             margin-top: 198px;
         }
     }
-
-    &__circle,
-    &__rings {
-        position: fixed;
-    }
-
-    &__circle {
-        top: 254px;
-        right: 37px;
-
-        @media only screen and (min-width: 48em) {
-            top: 442px;
-            right: -64.5px;
-        }
-
-        @media only screen and (min-width: 75em) {
-            top: 520px;
-            right: 545px;
-        }
-    }
-
-    &__rings {
-        top: 124px;
-        z-index: -1;
-        left: -350px;
-
-        @media only screen and (min-width: 48em) {
-            top: 80px;
-            left: -265px;
-        }
-
-        @media only screen and (min-width: 75em) {
-            top: 133px;
-            left: -100px;
-        }
-    }
 }
