@@ -1,0 +1,192 @@
+.projects {
+    &__section {
+        max-width: 400px;
+        margin: 80px auto 80px auto;
+
+        @media only screen and (min-width: 48em) {
+            max-width: 1110px;
+            margin: 100px auto 100px auto;
+        }
+
+        @media only screen and (min-width: 75em) {
+            margin: 140px auto 140px auto;
+        }
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 40px;
+
+        @media only screen and (min-width: 48em) {
+            margin-bottom: 60px;
+        }
+
+        @media only screen and (min-width: 75em) {
+            margin-bottom: 80px;
+        }
+    }
+
+    &__h2 {
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: -1.13636px;
+
+        @media only screen and (min-width: 48em) {
+            font-size: 72px;
+            line-height: 72px;
+            letter-spacing: -2.04545px;
+        }
+
+        @media only screen and (min-width: 75em) {
+            font-size: 88px;
+            line-height: 88px;
+            letter-spacing: -2.5px;
+        }
+    }
+
+    &__wrapper {
+        max-width: 343px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        row-gap: 50px;
+
+        @media only screen and (min-width: 48em) {
+            max-width: 1110px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            column-gap: 24px;
+            row-gap: 70px;
+        }
+
+        @media only screen and (min-width: 75em) {
+            column-gap: 30px;
+        }
+    }
+
+    &__project {
+        width: 340px;
+        position: relative;
+
+        @media only screen and (min-width: 57em) {
+            width: 344px;
+        }
+
+        @media only screen and (min-width: 75em) {
+            width: 540px;
+        }
+
+        &__img {
+            &--1,
+            &--2,
+            &--3,
+            &--4,
+            &--5,
+            &--6 {
+                background-position: center;
+                background-size: cover;
+                width: 100%;
+                height: 253px;
+                margin-bottom: 20px;
+
+                @media only screen and (min-width: 75em) {
+                    height: 400px;
+                    cursor: pointer;
+                }
+            }
+
+            &--1 {
+                background-image: url(./../assets/images/thumbnail-project-1-small.webp);
+            }
+
+            &--2 {
+                background-image: url(./../assets/images/thumbnail-project-2-small.webp);
+            }
+
+            &--3 {
+                background-image: url(./../assets/images/thumbnail-project-3-small.webp);
+            }
+
+            &--4 {
+                background-image: url(./../assets/images/thumbnail-project-4-small.webp);
+            }
+
+            &--5 {
+                background-image: url(./../assets/images/thumbnail-project-5-small.webp);
+            }
+
+            &--6 {
+                background-image: url(./../assets/images/thumbnail-project-6-small.webp);
+            }
+        }
+
+        &__h3 {
+            font-size: 24px;
+            line-height: 32px;
+            margin-bottom: 7px;
+        }
+
+        &__p {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 28px;
+            color: #d9d9d9;
+            margin-bottom: 20px;
+            word-spacing: 18px;
+
+            @media only screen and (min-width: 75em) {
+                margin-bottom: 0;
+            }
+        }
+
+        &__box {
+            @media only screen and (min-width: 75em) {
+                text-align: center;
+                position: absolute;
+                left: 0;
+                top: 0;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                row-gap: 48px;
+
+                cursor: pointer;
+                transition: background-color 0.2s;
+
+                width: 540px;
+                height: 400px;
+
+                .link {
+                    opacity: 0;
+                }
+
+                &:hover {
+                    background-color: rgba(0, 0, 0, 0.7);
+                }
+
+                &:hover .link {
+                    opacity: 1;
+                }
+            }
+        }
+
+        &__box .link {
+            @media only screen and (min-width: 75em) {
+                width: fit-content;
+                margin: 0 auto;
+            }
+        }
+
+        &__box .link:nth-child(1) {
+            margin-right: 30px;
+
+            @media only screen and (min-width: 75em) {
+                margin-right: auto;
+            }
+        }
+    }
+}
