@@ -8,6 +8,8 @@
     left: 50%;
     transform: translateX(-50%);
 
+    transition: opacity 0.2s, visibility 0.2s;
+
     @media only screen and (min-width: 48em) {
         width: 708.5px;
         display: flex;

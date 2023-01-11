@@ -166,6 +166,18 @@
     text-align: right;
 
     &__btn {
+        color: var(--color-white);
+        background-color: transparent;
+
+        border: none;
+        border-bottom: 2px solid var(--color-green);
+
+        cursor: pointer;
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+        }
     }
 
     &__icon {
